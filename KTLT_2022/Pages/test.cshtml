@@ -1,0 +1,32 @@
+﻿@page
+@model KTLT_2022.Pages.testModel
+@using KTLT_2022.Services
+@{
+    int a;
+    int b;
+
+    a = 1;
+    b = 2;
+    if (Request.HasFormContentType)
+    {
+        a = int.Parse(Request.Form["bienA"]);
+        b = int.Parse(Request.Form["bienB"]);
+    }
+
+    int s = XL_SoNguyen.TinhTong(a, b);
+    string Chuoi = "Ket qua la " + s;
+    string currentTime = $"Current time is  {DateTime.Now}";
+}
+<div>This is my new page</div>
+
+<br />
+@currentTime
+
+<form method="post">
+  <label for="bienA">Nhập a:</label><br>
+  <input type="text" name="bienA" value="10"><br>
+  <label for="bienB">Nhập b:</label><br>
+  <input type="text" name="bienB" value="300"><br><br>
+  <input type="submit" value="Tính">
+</form> 
+@Chuoi 

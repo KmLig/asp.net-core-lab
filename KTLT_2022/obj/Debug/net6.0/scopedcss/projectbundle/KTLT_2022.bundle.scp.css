@@ -1,0 +1,49 @@
+/* _content/KTLT_2022/Pages/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-xv0tdeawtc] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-xv0tdeawtc] {
+  color: #0077cc;
+}
+
+.btn-primary[b-xv0tdeawtc] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-xv0tdeawtc], .nav-pills .show > .nav-link[b-xv0tdeawtc] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-xv0tdeawtc] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-xv0tdeawtc] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-xv0tdeawtc] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-xv0tdeawtc] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-xv0tdeawtc] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

@@ -1,0 +1,19 @@
+﻿@page
+@model KTLT_2022.Pages.MH_Doc_TamGiacModel
+@using KTLT_2022.Entities
+@using KTLT_2022.Services
+@{
+    string Chuoi = string.Empty;
+    TAMGIAC t;
+   
+    
+
+           
+    t = XL_TamGiac.DocTamGiac();
+    Chuoi = $"Ket qua la A: ({t.a.X}, {t.a.Y}) B: ({t.b.X},{t.b.Y}) C: ({t.c.X},{t.c.Y})";
+    
+}
+<div>
+@Chuoi
+</div>
+

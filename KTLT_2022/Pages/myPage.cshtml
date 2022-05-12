@@ -1,0 +1,85 @@
+﻿@page
+@model KTLT_2022.Pages.myPageModel
+@{
+    var txt = "";
+    if (DateTime.Now.Hour > 12)
+    { txt = "Good morning!"; }
+    else 
+    { txt = "Good afternoon!"; }
+}
+<div>
+    <p>This is my page</p>
+</div>
+<ul>
+    @for (int i = 0; i < 10; i++)
+    {
+        <li>@i</li>
+    }
+</ul>
+Current time: @DateTime.Now
+<!-- Single statement block -->
+@{ var myMessage = "Hello World"; }
+
+<!-- Inline expression or variable -->
+<p>The value of myMessage is: @myMessage</p>
+
+<!-- Multi-statement block -->
+@{
+    var greeting = "Welcome to our site!";
+    var weekDay = DateTime.Now.DayOfWeek;
+    var year = DateTime.Now.Year;
+    var greetingMessage = greeting + " Here in HCM it is: " + weekDay + " " + year;
+}
+
+<p>The greeting is: @greetingMessage</p>
+
+<p>The message is: @txt</p>
+<div> This is my new page</div>
+<ul>
+    @for(int j = 0; j < 10; j++)
+    {
+        <li>@j</li>
+    }
+</ul>
+<div>Khiem kaka</div> 
+<p>Current time is @DateTime.Now</p>
+@{
+    var Khiemkaka = "Pham Xuan Khiêm";
+    var age = 30;
+    var sayHi = "Hello";
+}
+<p>My name is @Khiemkaka + my age is + @age + @sayHi</p>
+@{
+    int t1 = 10;
+    int t2 = 20;
+    if (t1> t2)
+    {
+        <div>@t1 > t2</div>
+    }
+    else
+    {
+        <div>@t2 > @t1</div>
+    }
+}
+@{
+    int b = 0;
+    while (b < 5)
+    {
+        b += 1;
+        <p>Line @b</p>
+    }
+}
+@{
+    string[] members = {"k", "b", "h", "y" };
+    int index = Array.IndexOf(members, "h") + 1;
+    int len = members.Length;
+    string x = members[2 - 1];
+}
+<h3>Members</h3>
+@foreach(var person in members)
+{
+    <p>@person</p>
+}
+<p> The numbers of names in members are @len</p>
+<p>The person at position 2 is @x</p>
+<p>H now is in position @index</p>

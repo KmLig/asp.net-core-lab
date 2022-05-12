@@ -1,0 +1,37 @@
+﻿@page
+@model KTLT_2022.Pages.MH_Cong_2_PhanSoModel
+@using KTLT_2022.Entities
+@using KTLT_2022.Services
+@{
+    string Chuoi = string.Empty;
+    DIEM a, b;
+    a.X = 1;
+    a.Y = 2;
+    b.X = 2;
+    b.Y = 3;
+
+    if (Request.HasFormContentType)
+    {        
+        a.X = int.Parse(Request.Form["x1"]);
+        a.Y = int.Parse(Request.Form["y1"]);
+        b.X = int.Parse(Request.Form["x2"]);
+        b.Y = int.Parse(Request.Form["y2"]);
+        double kc = XL_Diem.TinhKhoangCach(a, b);
+        Chuoi = $"Kết quả là: {kc}";
+    }
+
+    
+}
+<form method="post">
+  <label for="bienA">Nhập tử 1:</label><br>
+  <input type="text" name="x1" value="@a.X"><br>
+  <label for="bienB">Nhập mẫu 1:</label><br>
+  <input type="text" name="y1" value="@a.Y"><br><br>
+  <label for="bienA">Nhập tử 2:</label><br>
+  <input type="text" name="x2" value="@b.X"><br>
+  <label for="bienB">Nhập mẫu 2:</label><br>
+  <input type="text" name="y2" value="@b.Y"><br><br>
+  <input type="submit" value="Tính">
+</form> 
+
+@Chuoi

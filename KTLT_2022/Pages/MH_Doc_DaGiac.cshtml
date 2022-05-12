@@ -1,0 +1,22 @@
+﻿@page
+@model KTLT_2022.Pages.MH_Doc_DaGiacModel
+@using KTLT_2022.Entities
+@using KTLT_2022.Services
+@{
+    string Chuoi = string.Empty;
+    DAGIAC d;
+
+
+
+
+    d = XL_DaGiac.DocDaGiac();
+    for(int i = 0; i < d.DanhSachDinh.Length; i++)
+    {
+        Chuoi += $"({d.DanhSachDinh[i].X},{d.DanhSachDinh[i].Y}) ";
+    }
+
+}
+<div>
+@Chuoi
+</div>
+

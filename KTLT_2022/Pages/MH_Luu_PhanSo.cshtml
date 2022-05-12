@@ -1,0 +1,32 @@
+﻿@page
+@model KTLT_2022.Pages.MH_Luu_PhanSoModel
+@using KTLT_2022.Entities
+@using KTLT_2022.Services
+@{
+    string Chuoi = string.Empty;
+    PHANSO a;
+    a.TuSo = 1;
+    a.MauSo = 2;
+    
+
+    if (Request.HasFormContentType)
+    {        
+        a.TuSo = int.Parse(Request.Form["tu1"]);
+        a.MauSo = int.Parse(Request.Form["mau1"]);
+        
+        bool kq = XL_PhanSo.LuuPhanSo(a);
+        Chuoi = $"Luu thanh cong {kq}";
+    }
+
+    
+}
+<form method="post">
+  <label for="bienA">Nhập tử 1:</label><br>
+  <input type="text" name="tu1" value="@a.TuSo"><br>
+  <label for="bienB">Nhập mẫu 1:</label><br>
+  <input type="text" name="mau1" value="@a.MauSo"><br><br>
+  
+  <input type="submit" value="Luu">
+</form> 
+
+@Chuoi

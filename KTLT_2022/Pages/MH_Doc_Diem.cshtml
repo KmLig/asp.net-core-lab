@@ -1,0 +1,25 @@
+﻿@page
+@model KTLT_2022.Pages.MH_Doc_DiemModel
+@using KTLT_2022.Entities
+@using KTLT_2022.Services
+@{
+    string Chuoi = string.Empty;
+    DIEM a;
+   
+    
+
+           
+    a = XL_Diem.DocDiem();
+    Chuoi = $"Ket qua la2: ({a.X}, {a.Y})";
+    
+}
+<form method="post">
+  <label for="bienA">Nhập x:</label><br>
+  <input type="text" name="x" value="@a.X"><br>
+  <label for="bienB">Nhập y:</label><br>
+  <input type="text" name="y" value="@a.Y"><br><br>
+  
+  <input type="submit" value="Luu">
+</form> 
+
+@Chuoi

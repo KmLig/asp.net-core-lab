@@ -1,0 +1,29 @@
+﻿@page
+@model KTLT_2022.Pages.MH_Luu_DaGiacModel
+@using KTLT_2022.Entities
+@using KTLT_2022.Services
+@{
+    string Chuoi = string.Empty;
+    DAGIAC a;
+
+
+
+    if (Request.HasFormContentType)
+    {        
+        string chuoiDinh = Request.Form["dinh"];
+        a = XL_DaGiac.KhoiTaoDaGiac(chuoiDinh);     
+        bool kc = XL_DaGiac.LuuDaGiac(a);
+        Chuoi = $"Luu thanh cong: {kc}";
+    }
+
+    
+}
+<form method="post">
+  <label for="bienA">Nhập các đỉnh:</label><br>
+  <input type="text" name="dinh" value="(4,5)|(6,7)|(7,3)|(5,3)"><br>
+  
+  
+  <input type="submit" value="Luu">
+</form> 
+
+@Chuoi
