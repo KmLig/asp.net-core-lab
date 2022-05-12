@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "drk+ONz94MuGTHW0UEkODO8J85tQGfPtt2yNEsUFGGi99vBXAlMXFTbVIhF6XSJaPyhSG24bKkX87Yy3z6PVpg==",
+  "dgSpecHash": "cCIFfWVaRc/9RUldJqAOuj2/6JJZLbmvru+4vtu18mRXfRearwu4k+uUsmon/onKLDI8JjK0l+xNEMimTtsHpw==",
   "success": true,
   "projectFilePath": "D:\\CN-CNTT-FS\\HK2\\Kỹ thuật lập trình\\Thực hành\\KTLT_2022\\KTLT_2022\\KTLT_2022.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\WINDOW\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

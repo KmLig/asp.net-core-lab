@@ -1,17 +1,11 @@
 ﻿using KTLT_2022.Entities;
+using Newtonsoft.Json;
 
 namespace KTLT_2022.DAL
 {
     public class LuuTruDaGiac
     {
-        public static void Luu(TAMGIAC t)
-        {
-            StreamWriter file = new StreamWriter("D:\\CN-CNTT-FS\\HK2\\Kỹ thuật lập trình\\KTLT\\Lưu\\TamGiac.txt");
-            file.WriteLine($"{t.a.X}, {t.a.Y}");
-            file.WriteLine($"{t.b.X}, {t.b.Y}");
-            file.WriteLine($"{t.c.X}, {t.c.Y}");
-            file.Close();
-        }
+        
 
         public static DAGIAC Doc()
         {
@@ -31,7 +25,7 @@ namespace KTLT_2022.DAL
             return d;
         }
 
-        public static bool Luu(DAGIAC d)
+        public static bool Luu_File(DAGIAC d)
         {
             StreamWriter writer = new StreamWriter("D:\\CN-CNTT-FS\\HK2\\Kỹ thuật lập trình\\KTLT\\Lưu\\DaGiac.txt");
             writer.WriteLine(d.DanhSachDinh.Length);
@@ -39,7 +33,16 @@ namespace KTLT_2022.DAL
             {
                 writer.WriteLine($"{d.DanhSachDinh[i].X},{d.DanhSachDinh[i].Y}");
             }
+            writer.Close();
+            return true;
+        }
 
+        public static bool Luu(DAGIAC d)
+        {
+            StreamWriter writer = new StreamWriter("D:\\CN-CNTT-FS\\HK2\\Kỹ thuật lập trình\\KTLT\\Lưu\\DaGiac.json");
+            string json = JsonConvert.SerializeObject(d);
+            writer.WriteLine(json);
+            
             writer.Close();
             return true;
         }
