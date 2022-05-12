@@ -1,42 +1,23 @@
 ﻿@page
-@model KTLT_2022.Pages.MH_Cong_2_PhanSoModel
+@model KTLT_2022.Pages.MH_TinhChuVi_TamGiacModel
 @using KTLT_2022.Entities
 @using KTLT_2022.Services
-@{
-    string Chuoi = string.Empty;
-    TAMGIAC tg;
-    tg.a.X = 0; tg.a.Y = 0;    
-    tg.b.X = 1; tg.b.Y = 0;    
-    tg.c.X = 0; tg.c.Y = 1;    
-
-    if (Request.HasFormContentType)
-    {        
-        tg.a.X = int.Parse(Request.Form["x1"]);
-        tg.a.Y = int.Parse(Request.Form["y1"]);
-        tg.b.X = int.Parse(Request.Form["x2"]);
-        tg.b.Y = int.Parse(Request.Form["y2"]);
-        tg.c.X = int.Parse(Request.Form["x3"]);
-        tg.c.Y = int.Parse(Request.Form["y3"]);         
-        double kc = XL_TamGiac.TinhChuVi(tg);
-        Chuoi = $"Kết quả là: {kc}";
-    }
-
-    
+@{  
 }
 <form method="post">
   <label for="bienA">Nhập toa do x diem a:</label><br>
-  <input type="text" name="x1" value="@tg.a.X"><br>
+  <input type="text" name="x1" value="@Model.X1"><br>
   <label for="bienB">Nhập toa do y diem a:</label><br>
-  <input type="text" name="y1" value="@tg.a.Y"><br><br>
+  <input type="text" name="y1" value="@Model.Y1"><br><br>
   <label for="bienA">Nhập toa do x diem b:</label><br>
-  <input type="text" name="x2" value="@tg.b.X"><br>
+  <input type="text" name="x2" value="@Model.X2"><br>
   <label for="bienB">Nhập toa do y diem b:</label><br>
-  <input type="text" name="y2" value="@tg.b.Y"><br><br>
+  <input type="text" name="y2" value="@Model.Y2"><br><br>
   <label for="bienA">Nhập toa do x diem c:</label><br>
-  <input type="text" name="x3" value="@tg.c.X"><br>
+  <input type="text" name="x3" value="@Model.X3"><br>
   <label for="bienB">Nhập toa do y diem c:</label><br>
-  <input type="text" name="y3" value="@tg.c.Y"><br><br>
+  <input type="text" name="y3" value="@Model.Y3"><br><br>
   <input type="submit" value="Tính">
 </form> 
 
-@Chuoi
+@Model.Chuoi

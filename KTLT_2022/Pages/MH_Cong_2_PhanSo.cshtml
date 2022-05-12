@@ -3,35 +3,22 @@
 @using KTLT_2022.Entities
 @using KTLT_2022.Services
 @{
-    string Chuoi = string.Empty;
-    PHANSO a, b;
-    a.TuSo = 1;
-    a.MauSo = 2;
-    b.TuSo = 2;
-    b.MauSo = 3;
-
-    if (Request.HasFormContentType)
-    {        
-        a.TuSo = int.Parse(Request.Form["tu1"]);
-        a.MauSo = int.Parse(Request.Form["mau1"]);
-        b.TuSo = int.Parse(Request.Form["tu2"]);
-        b.MauSo = int.Parse(Request.Form["mau2"]);
-        PHANSO s = XL_PhanSo.TinhTong(a, b);
-        Chuoi = $"Kết quả là: {s.TuSo}/{s.MauSo}";
-    }
-
-    
 }
 <form method="post">
-  <label for="bienA">Nhập tử 1:</label><br>
-  <input type="text" name="tu1" value="@a.TuSo"><br>
-  <label for="bienB">Nhập mẫu 1:</label><br>
-  <input type="text" name="mau1" value="@a.MauSo"><br><br>
-  <label for="bienA">Nhập tử 2:</label><br>
-  <input type="text" name="tu2" value="@b.TuSo"><br>
-  <label for="bienB">Nhập mẫu 2:</label><br>
-  <input type="text" name="mau2" value="@b.MauSo"><br><br>
-  <input type="submit" value="Tính">
+  <label for="bienA">Nhap tu 1:</label><br>
+  <input type="text" name="tu1" value="@Model.Tu1"><br>
+  <label for="bienB">Nhap mau 1:</label><br>
+  <input type="text" name="mau1" value="@Model.Mau1"><br><br>
+  <label for="bienA">Nhap tu 2:</label><br>
+  <input type="text" name="tu2" value="@Model.Tu2"><br>
+  <label for="bienB">Nhap mau 2:</label><br>
+  <input type="text" name="mau2" value="@Model.Mau2" ><br><br>
+  <input type="submit" value="Tinh">
 </form> 
 
-@Chuoi
+@Model.Chuoi
+
+@section Scripts
+{
+    <div>This is script of MH_Cong_2_PhanSo</div>
+}

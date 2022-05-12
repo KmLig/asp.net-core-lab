@@ -8,9 +8,9 @@ namespace KTLT_2022.DAL
         public static void Luu_File(TAMGIAC t)
         {
             StreamWriter file = new StreamWriter("D:\\CN-CNTT-FS\\HK2\\Kỹ thuật lập trình\\KTLT\\Lưu\\TamGiac.txt");
-            file.WriteLine($"{t.a.X}, {t.a.Y}");
-            file.WriteLine($"{t.b.X}, {t.b.Y}");
-            file.WriteLine($"{t.c.X}, {t.c.Y}");
+            file.WriteLine($"{t.A.X}, {t.A.Y}");
+            file.WriteLine($"{t.B.X}, {t.B.Y}");
+            file.WriteLine($"{t.C.X}, {t.C.Y}");
             file.Close();
         }
 
@@ -27,11 +27,11 @@ namespace KTLT_2022.DAL
             TAMGIAC t;
             StreamReader file = new StreamReader("D:\\CN-CNTT-FS\\HK2\\Kỹ thuật lập trình\\KTLT\\Lưu\\TamGiac.txt");
             string s = file.ReadLine();
-            t.a = LuuTruDiem.KhoiTaoDiem(s);
+            t.A = LuuTruDiem.KhoiTaoDiem(s);
             s = file.ReadLine();
-            t.b = LuuTruDiem.KhoiTaoDiem(s);
+            t.B = LuuTruDiem.KhoiTaoDiem(s);
             s = file.ReadLine();
-            t.c = LuuTruDiem.KhoiTaoDiem(s);
+            t.C = LuuTruDiem.KhoiTaoDiem(s);
 
             file.Close();
             return t;

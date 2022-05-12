@@ -59,8 +59,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVGluaENodVZpX1RhbUdpYWMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CN-CNTT-FS/HK2/Kỹ thuật lập trình/Thực hành/KTLT_2022/KTLT_2022/Pages/MH_TinhKhoangCach_Diem - Copy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVGluaEtob2FuZ0NhY2hfRGllbSAtIENvcHkuY3NodG1s
+[D:/CN-CNTT-FS/HK2/Kỹ thuật lập trình/Thực hành/KTLT_2022/KTLT_2022/Pages/MH_TinhKhoangCach_Diem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVGluaEtob2FuZ0NhY2hfRGllbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/CN-CNTT-FS/HK2/Kỹ thuật lập trình/Thực hành/KTLT_2022/KTLT_2022/Pages/myPage.cshtml]
@@ -77,6 +77,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/CN-CNTT-FS/HK2/Kỹ thuật lập trình/Thực hành/KTLT_2022/KTLT_2022/Pages/test.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdGVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/Kỹ thuật lập trình/Thực hành/KTLT_2022/KTLT_2022/Pages/TestExcshtml.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdEV4Y3NodG1sLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/CN-CNTT-FS/HK2/Kỹ thuật lập trình/Thực hành/KTLT_2022/KTLT_2022/Pages/_ViewImports.cshtml]

@@ -1,0 +1,19 @@
+﻿@page
+@model KTLT_2022.Pages.MH_TinhKhoangCach_DiemModel
+@using KTLT_2022.Entities
+@using KTLT_2022.Services
+@{   
+}
+<form method="post">
+  <label for="bienA">Nhập tử 1:</label><br>
+  <input type="text" name="x1" value="@Model.X1"><br>
+  <label for="bienB">Nhập mẫu 1:</label><br>
+  <input type="text" name="y1" value="@Model.Y1"><br><br>
+  <label for="bienA">Nhập tử 2:</label><br>
+  <input type="text" name="x2" value="@Model.X2"><br>
+  <label for="bienB">Nhập mẫu 2:</label><br>
+  <input type="text" name="y2" value="@Model.Y2"><br><br>
+  <input type="submit" value="Tính">
+</form> 
+
+@Model.Chuoi

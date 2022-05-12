@@ -2,8 +2,8 @@
 {
     public struct TAMGIAC
     {
-        public DIEM a;
-        public DIEM b;
-        public DIEM c;
+        public DIEM A;
+        public DIEM B;
+        public DIEM C;
     }
 }

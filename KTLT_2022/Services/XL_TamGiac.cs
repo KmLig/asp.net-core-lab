@@ -11,9 +11,9 @@ namespace KTLT_2022.Services
         public static double TinhChuVi(TAMGIAC tg)
         {
             double a, b, c;
-            a = XL_Diem.TinhKhoangCach(tg.b, tg.c); 
-            b = XL_Diem.TinhKhoangCach(tg.a, tg.c);
-            c = XL_Diem.TinhKhoangCach(tg.a, tg.b);
+            a = XL_Diem.TinhKhoangCach(tg.B, tg.C); 
+            b = XL_Diem.TinhKhoangCach(tg.A, tg.C);
+            c = XL_Diem.TinhKhoangCach(tg.A, tg.B);
 
             return a + b + c;
         }
@@ -21,9 +21,9 @@ namespace KTLT_2022.Services
         public static bool KiemTraTamGiac(TAMGIAC tg)
         {
             double a, b, c;
-            a = XL_Diem.TinhKhoangCach(tg.b, tg.c);
-            b = XL_Diem.TinhKhoangCach(tg.a, tg.c);
-            c = XL_Diem.TinhKhoangCach(tg.a, tg.b);
+            a = XL_Diem.TinhKhoangCach(tg.B, tg.C);
+            b = XL_Diem.TinhKhoangCach(tg.A, tg.C);
+            c = XL_Diem.TinhKhoangCach(tg.A, tg.B);
 
             return a + b > c && a + c > b && c + b > a;
         }

@@ -1,0 +1,18 @@
+﻿@page
+@model KTLT_2022.Pages.TestExcshtmlModel
+@{
+   
+}
+<div class="bg-success rounded-2 p-2 text-white">
+    Hi am @Model.Name
+    <br />
+    My age is @Model.Age
+</div>
+<br />
+<div class="bg-opacity-25">
+   <form method="post">
+      <label for="bienA">Nhập X:</label><br>
+      <input type="text" name="x" value="@Model.Age"><br><br />  
+      <input type="submit" value="Tính">
+  </form> 
+</div>
