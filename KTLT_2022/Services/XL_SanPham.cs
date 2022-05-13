@@ -28,5 +28,55 @@ namespace KTLT_2022.Services
             }
             return kq;
         }
+
+        public static SANPHAM? DocSanPham(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                return null;
+            }
+            List<SANPHAM> dssp = LuuTruSanPham.DocDanhSachSanPham();
+            foreach(SANPHAM sp in dssp)
+            {
+                if(sp.MaSP == id)
+                {
+                    return sp;
+                }
+            }
+            return null;
+        }
+        public static bool SuaSanPham(string id, string tenSP, int giaSP)
+        {
+            if(string.IsNullOrEmpty(id) || string.IsNullOrEmpty(tenSP) || giaSP <= 0)
+            {
+                return false;
+            }
+            SANPHAM? sp = DocSanPham(id);
+            if (sp != null)
+            {
+                SANPHAM spMoi;
+                spMoi.MaSP = id;
+                spMoi.TenSP = tenSP;
+                spMoi.GiaSP = giaSP;
+                LuuTruSanPham.Sua(spMoi);
+                return true;
+            }            
+            return false;
+        }
+
+        public static bool XoaSanPham(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                return false;
+            }
+            SANPHAM? sp = DocSanPham(id);
+            if (sp != null)
+            {
+                LuuTruSanPham.Xoa(id);
+                return true;
+            }
+            return false;
+        }
     }
 }

@@ -9,7 +9,8 @@ namespace KTLT_2022.Pages
     public class MH_DanhSachSanPhamModel : PageModel
     {
         public List<SANPHAM> dsSanPham;
-        
+        //[BindProperty(SupportsGet = true)]
+        //public string ID { get; set; }
         [BindProperty]
         public string? TuKhoa { get; set; }
         

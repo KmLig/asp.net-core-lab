@@ -4,6 +4,10 @@
 @using KTLT_2022.Services
 @{ 
 }
+
+<div class="container">
+    <a href="/MH_Tao_SanPham" class="btn btn-warning">Tao</a>
+</div>
 <form method="post">
   <label for="bienA">Nhập từ khóa:</label><br>
   <input type="text" name="tuKhoa" value=""><br><br /> 
@@ -16,6 +20,7 @@
         <th>Ma SP</th>
         <th>Ten SP</th>
         <th>Gia SP</th>
+        <th></th>
     </tr>
     @foreach(SANPHAM sp in @Model.dsSanPham)
     {
@@ -23,6 +28,10 @@
             <td>@sp.MaSP</td>
             <td>@sp.TenSP</td>
             <td>@sp.GiaSP</td>
+            <td>
+                <a href="/MH_XoaSanPham?id=@sp.MaSP">Xoa</a>
+                <a href="/MH_SuaSanPham?id=@sp.MaSP">Sua</a>                  
+            </td>
         </tr>
     }
 </table>

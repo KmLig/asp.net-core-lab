@@ -34,6 +34,34 @@ namespace KTLT_2022.DAL
             return true;
         }
 
+        public static bool Sua(SANPHAM s)
+        {
+            List<SANPHAM> dssp = DocDanhSachSanPham();
+            for (int i = 0; i < dssp.Count; i++)
+            {
+                if (dssp[i].MaSP == s.MaSP)
+                {
+                    dssp[i] = s;
+                    LuuDanhSachSanPham(dssp);
+                    return true;
+                }
+            }
+            return false;
+        }
 
+        public static bool Xoa(string id)
+        {
+            List<SANPHAM> dssp = DocDanhSachSanPham();
+            for (int i = 0; i < dssp.Count; i++)
+            {
+                if (dssp[i].MaSP == id)
+                {
+                    dssp.RemoveAt(i);
+                    LuuDanhSachSanPham(dssp);
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

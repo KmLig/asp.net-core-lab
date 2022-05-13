@@ -30,6 +30,7 @@ namespace KTLT_2022.Pages
             A.GiaSP = GiaSP;
             bool kq = XL_SanPham.TaoSanPham(A);
             Chuoi = $"Ket qua la: {kq}";
+            Response.Redirect("/MH_DanhSachSanPham");
         }
     }
 }

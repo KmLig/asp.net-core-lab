@@ -7,7 +7,6 @@ D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\bin
 D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\bin\Debug\net6.0\KTLT_2022.dll
 D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\bin\Debug\net6.0\ref\KTLT_2022.dll
 D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\bin\Debug\net6.0\KTLT_2022.pdb
-D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\obj\Debug\net6.0\KTLT_2022.csproj.AssemblyReference.cache
 D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\obj\Debug\net6.0\KTLT_2022.GeneratedMSBuildEditorConfig.editorconfig
 D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\obj\Debug\net6.0\KTLT_2022.AssemblyInfoInputs.cache
 D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\obj\Debug\net6.0\KTLT_2022.AssemblyInfo.cs
@@ -26,3 +25,4 @@ D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\obj
 D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\obj\Debug\net6.0\KTLT_2022.genruntimeconfig.cache
 D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\obj\Debug\net6.0\KTLT_2022.csproj.CopyComplete
+D:\CN-CNTT-FS\HK2\Kỹ thuật lập trình\Thực hành\KTLT_2022\KTLT_2022\obj\Debug\net6.0\KTLT_2022.csproj.AssemblyReference.cache

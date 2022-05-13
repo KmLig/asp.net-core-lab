@@ -1,0 +1,20 @@
+﻿@page
+@model KTLT_2022.Pages.MH_SuaSanPhamModel
+@if (@Model.coSanPham)
+{   
+<form method="post" > 
+  <div class="form-group">
+  <label for="bienB">Nhập ten SP:</label><br>
+  <input type="text" class="form-control" name="TenSP" value="@Model.SanPham.TenSP"><br>
+  </div>
+  <div class="form-group">
+  <label for="bienB">Nhập gia SP:</label><br>
+  <input type="text" class="form-control" name="GiaSP" value="@Model.SanPham.GiaSP"><br><br>
+  </div>
+  
+  <input type="submit" class="btn btn-primary" value="Luu">
+</form> 
+}
+<div class="text-danger mt-2">
+@Model.Chuoi
+</div>
