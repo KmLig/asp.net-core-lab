@@ -1,0 +1,30 @@
+﻿@page
+@model KTLT_2022.Pages.MH_TinhChuVi_DaGiacModel
+@using KTLT_2022.Entities
+@using KTLT_2022.Services
+@{
+}
+<form method="post">
+  <div class="form-group">
+      <label for="bienA">Nhập các đỉnh:</label><br>
+      <input type="text" class="form-control" name="ChuoiDaGiac" value="@Model.ChuoiDaGiac"><br>
+  </div>  
+  <div class="form-group">
+    <input type="submit" class="btn btn-primary" value="Lưu">
+  </div>
+</form> 
+
+<table class="table table-dark table-striped table-hover mt-4">
+    <tr>
+        <th>X</th>
+        <th>Y</th>
+    </tr>
+    @foreach(DIEM diem in @Model.d.DanhSachDinh)
+    {
+        <tr>
+            <td>@diem.X</td>
+            <td>@diem.Y</td>
+        </tr>
+    }
+</table>
+@Model.Chuoi

@@ -7,7 +7,9 @@ namespace KTLT_2022.Pages
 {
     public class MH_TinhChuVi_TamGiacModel : PageModel
     {
-        public string? Chuoi { get; set; }
+        public TAMGIAC t;
+        public string? Chuoi;
+
         [BindProperty]
         public int X1 { get; set; }
         [BindProperty]
@@ -23,10 +25,12 @@ namespace KTLT_2022.Pages
         public void OnGet()
         {
             Chuoi = string.Empty;
+            t.A.X = 0; t.A.Y = 0;
+            t.B.X = 0; t.B.Y = 1;
+            t.C.X = 1; t.C.Y = 0;
         }
         public void OnPost()
-        {
-            TAMGIAC t;
+        {            
             t.A.X = X1;
             t.A.Y = Y1;
             t.B.X = X2;

@@ -7,7 +7,9 @@ namespace KTLT_2022.Pages
 {
     public class MH_Cong_2_PhanSoModel : PageModel
     {
-        public string? Chuoi { get; set; }
+        public PHANSO A, B;
+        public string? Chuoi;
+
         [BindProperty]
         public int Tu1 { get; set; }
         [BindProperty]
@@ -19,12 +21,15 @@ namespace KTLT_2022.Pages
 
         public void OnGet()
         {
-            Chuoi = string.Empty;            
+            Chuoi = string.Empty;
+            A.TuSo = 1;
+            A.MauSo = 2;
+            B.TuSo = 2;
+            B.MauSo = 3;
         }
 
         public void OnPost()
-        {
-            PHANSO A, B;
+        {            
             A.TuSo = Tu1;
             A.MauSo = Mau1;
             B.TuSo = Tu2;
