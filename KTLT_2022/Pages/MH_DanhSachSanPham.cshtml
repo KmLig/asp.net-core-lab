@@ -1,0 +1,28 @@
+﻿@page
+@model KTLT_2022.Pages.MH_DanhSachSanPhamModel
+@using KTLT_2022.Entities
+@using KTLT_2022.Services
+@{ 
+}
+<form method="post">
+  <label for="bienA">Nhập từ khóa:</label><br>
+  <input type="text" name="tuKhoa" value=""><br><br /> 
+  
+  <input type="submit" class="btn btn-primary" value="Tìm kiếm">
+</form> 
+
+<table class="table table-dark table-striped table-hover mt-4">
+    <tr>
+        <th>Ma SP</th>
+        <th>Ten SP</th>
+        <th>Gia SP</th>
+    </tr>
+    @foreach(SANPHAM sp in @Model.dsSanPham)
+    {
+        <tr>
+            <td>@sp.MaSP</td>
+            <td>@sp.TenSP</td>
+            <td>@sp.GiaSP</td>
+        </tr>
+    }
+</table>

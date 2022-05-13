@@ -1,0 +1,18 @@
+﻿@page
+@model KTLT_2022.Pages.MH_Tao_SanPhamModel
+@using KTLT_2022.Entities
+@using KTLT_2022.Services
+@{ 
+}
+<form method="post">
+  <label for="bienA">Nhập Ma SP:</label><br>
+  <input type="text" name="MaSP" value="@Model.A.MaSP"><br>
+  <label for="bienB">Nhập ten SP:</label><br>
+  <input type="text" name="TenSP" value="@Model.A.TenSP"><br>
+  <label for="bienB">Nhập gia SP:</label><br>
+  <input type="text" name="GiaSP" value="@Model.A.GiaSP"><br><br>
+  
+  <input type="submit" value="Luu">
+</form> 
+
+@Model.Chuoi
